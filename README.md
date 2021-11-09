@@ -5,4 +5,5 @@ Core Java Tutorials
 * registration Java servlet
 * Core Java Code interview questions and answers 
 * Pojo sample
+* sample code
 

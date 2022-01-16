@@ -10,7 +10,7 @@ public class FileReadWriteRunner {
         Path path = Paths.get("./resources/test.txt");
         String fileContent = Files.readString(path);
 
-        //
+        // readstring and writestring is inroduced in java 11
         String newFileContent= fileContent.replace("line","purab");
         Path newPath = Paths.get("./resources/test2.txt");
         Files.writeString(newPath,newFileContent);

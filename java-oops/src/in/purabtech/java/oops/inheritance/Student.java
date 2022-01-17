@@ -6,6 +6,36 @@ public class Student {
 	int sAge;
 	int marks;
 	
+	
+	
+	public int getRollNo() {
+		return rollNo;
+	}
+
+	public void setRollNo(int rollNo) {
+		this.rollNo = rollNo;
+	}
+
+	public String getsName() {
+		return sName;
+	}
+
+	public void setsName(String sName) {
+		this.sName = sName;
+	}
+
+	public int getsAge() {
+		return sAge;
+	}
+
+	public void setsAge(int sAge) {
+		this.sAge = sAge;
+	}
+
+	public int getMarks() {
+		return marks;
+	}
+
 	public void setMarks(int m) {
 		if(m>=0)
 			marks=m;

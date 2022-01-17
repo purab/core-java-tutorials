@@ -1,10 +1,22 @@
 package in.purabtech.java.oops.inheritance;
 
-public class Student {
+public class Student extends Human {
+	
+	/*
+	 * Class 
+	 * Object
+	 * Encapsulation - data hiding
+	 * Inheritance - parent child
+	 * Polymorphism - many form- change behavior (over riding and over loading
+	 * Abstraction - force to implement child method
+	 * 
+	 */
+	
 	int rollNo;
-	String sName;
-	int sAge;
+	
 	int marks;
+	
+	
 	
 	
 	
@@ -16,21 +28,6 @@ public class Student {
 		this.rollNo = rollNo;
 	}
 
-	public String getsName() {
-		return sName;
-	}
-
-	public void setsName(String sName) {
-		this.sName = sName;
-	}
-
-	public int getsAge() {
-		return sAge;
-	}
-
-	public void setsAge(int sAge) {
-		this.sAge = sAge;
-	}
 
 	public int getMarks() {
 		return marks;
@@ -46,4 +43,14 @@ public class Student {
 	public double getPercent() {
 		return (marks*1.0/75) *100;
 	}
+	
+	//method overriding
+	public void write() {
+		System.out.println("I am writing in student");
+	}
+	
+	//Method over loading
+	public void write(String assignment) {
+		System.out.println("I am writing assignment:"+assignment);
+	}	
 }

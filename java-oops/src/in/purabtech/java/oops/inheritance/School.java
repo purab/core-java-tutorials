@@ -6,18 +6,20 @@ public class School {
 		
 		Student student = new Student();		
 		student.setRollNo(4);
-		student.setsName("purab");
+		student.setName("purab");
 		student.setMarks(40);
-		student.setsAge(30);		
+		student.setAge(30);	
+		student.write();
 		
 		double percent = student.getPercent();
 		System.out.println(percent);
 		
 		Teacher teacher = new Teacher();
 		teacher.seteId(1);
-		teacher.settName("test");
-		teacher.settAge(30);
+		teacher.setName("test");
+		teacher.setAge(30);
 		teacher.setSalary(30000);
+		teacher.write();
 		
 		int asalary= teacher.annualSalary();
 		System.out.println(asalary);

@@ -1,10 +1,8 @@
 package in.purabtech.java.oops.inheritance;
 
-public class Teacher {
+public class Teacher extends Human {
 	//teachers and
-	int eId;
-	String tName;
-	int tAge;
+	int eId;	
 	int salary;
 	
 	
@@ -17,30 +15,6 @@ public class Teacher {
 
 	public void seteId(int eId) {
 		this.eId = eId;
-	}
-
-
-
-	public String gettName() {
-		return tName;
-	}
-
-
-
-	public void settName(String tName) {
-		this.tName = tName;
-	}
-
-
-
-	public int gettAge() {
-		return tAge;
-	}
-
-
-
-	public void settAge(int tAge) {
-		this.tAge = tAge;
 	}
 
 
@@ -59,5 +33,9 @@ public class Teacher {
 
 	public int annualSalary() {
 		return salary*12;
+	}
+	
+	public void write() {
+		System.out.println("writing in teacher..");
 	}
 }

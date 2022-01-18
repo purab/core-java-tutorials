@@ -8,7 +8,7 @@ public class ExceptionHandingDemo {
         List<String> list = Arrays.asList("44","373","xyz");
         List<Integer> list2 = Arrays.asList(1,0);
 
-        //list2.forEach(handleExceptionIfAny(s-> System.out.println(Integer.parseInt(s))));
+        list2.forEach(handleGenricException(s-> System.out.println(10/s),ArithmeticException.class));
 
         //list.forEach(ExceptionHandingDemo::printList);
         list.forEach(handleGenricException(s-> System.out.println(Integer.parseInt(s)), NumberFormatException.class));
